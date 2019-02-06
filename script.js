@@ -80,13 +80,17 @@ function getwords() {
     resultDiv.innerHTML = "";
     resultDiv.appendChild(resultsInner);
     var end = new Date();
-    console.log(`${numFound} words found, time approx: ${end - start} milliseconds`);
+    document.getElementById("stats").innerHTML = 
+        `${numFound} words found, time approx: ${end - start} milliseconds`;
 }
 
 
+// when the user enters text, after a second perform a search automaticially
 function getwordsdelayed() {
-    clearTimeout(timer);
-    timer = setTimeout(getwords, 1000);
+    if (document.getElementById("textinput").value != "" ) {
+        clearTimeout(timer);
+        timer = setTimeout(getwords, 1000);
+    }
 }
 
 
@@ -99,11 +103,5 @@ window.onload = function() {
     document.getElementById("textinput").onclick = function() {
         this.value = "";
     };
-
-    
+   
 };
-
-
-
-
-
