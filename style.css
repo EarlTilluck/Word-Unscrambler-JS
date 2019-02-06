@@ -1,0 +1,9 @@
+#results div {
+    display:flex;
+    flex-wrap:wrap;
+}
+p {
+    width: 30%;
+    font-size: 14px;
+    margin: 0;    
+}
