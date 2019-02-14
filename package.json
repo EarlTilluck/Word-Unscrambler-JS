@@ -1,0 +1,22 @@
+{
+  "name": "unscrambler",
+  "version": "1.0.0",
+  "description": "Unscramble words from a random set of characters using TW06 scrabble dictionary.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EarlTilluck/Word-Unscrambler-JS.git"
+  },
+  "author": "Earl Tilluck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EarlTilluck/Word-Unscrambler-JS/issues"
+  },
+  "homepage": "https://github.com/EarlTilluck/Word-Unscrambler-JS#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
