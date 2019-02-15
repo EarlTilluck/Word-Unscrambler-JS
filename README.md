@@ -2,14 +2,13 @@
 A web application that allows you to unscramble words from a random selection of letters.  
 Useful for cheating scrabble, bookworm adventures and other word games. 
 
-## If you have suggestions on how to improve this project, I am very interested to know.
+### If you have suggestions on how to improve this project, I am very interested to know.
 
 ### todo:
-* dictionary is working, /test sends a json response with a search response with 'sandwich'
-* create web page
-* improve algorithm
-* check process usage
-* response takes around 100 milliseconds, should look into asyc with promises to avoid blocking.
+* add code for errors (/search/nothing or /search/1234)
+* Update web page (css)
+* improve algorithm?
+* read and check on how to avoid blocking.
 * how to stress test application?
 
 ### Instructions
