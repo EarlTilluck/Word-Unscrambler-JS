@@ -16,6 +16,8 @@ This is a node server application that uses express
 
 run ```npm install``` then ```node app```
 
+visit http://localhost:5000/ in dev environment.
+
 also available live @ [~~This website (not live yet~~)](https://www.google.com)
 
 ### Why?
