@@ -1,21 +1,34 @@
 # Word Unscrambler JS
-Currently takes approx 100 milliseconds to perform an 8 letter unscramble.  
-There are also larger word lists out there and there is most likely a better way to do this.  
-Will work on more optimizations.
+A web application that allows you to unscramble words from a random selection of letters.  
+Useful for cheating scrabble, bookworm adventures and other word games. 
 
-### What It Does
+## If you have suggestions on how to improve this project, I am very interested to know.
 
-Enter a selection of scrambled letters such as `adesfghytp` and receive a list of words that those letters can form.  
-This runs entirely in the browser and does not require a database or serverside computation.
+### todo:
+* dictionary is working, /test sends a json response with a search response with 'sandwich'
+* create web page
+* improve algorithm
+* check process usage
+* response takes around 100 milliseconds, should look into asyc with promises to avoid blocking.
+* how to stress test application?
+
+### Instructions
+This is a node server application that uses express
+
+run ```npm install``` then ```node app```
+
+also available live @ [~~This website (not live yet~~)](https://www.google.com)
 
 ### Why?
-Honestly I wanted to cheat my favourite word game.  
-It is an interesting problem that may require a data structure and some clever thinking.
+It is an interesting problem that may require a data structure and some clever thinking.  
+I also wanted to cheat my favourite word game.
+
+### How?
+Instead of using a database, I keep a two dimensional array of [words][letters] in memory for searching.  
 
 ### What I learned...
-It is a good idea to Make tools to generate code for you.
-Needs more optimization.
-
+* reading files with fs
+* promises
 
 ### More
-Original twl06 text file downloaded from [Here](https://opusthepenguin.wordpress.com/2011/05/19/sowpods-vs-twl/)
+Original TWL06 text file downloaded from [Here](https://opusthepenguin.wordpress.com/2011/05/19/sowpods-vs-twl/)

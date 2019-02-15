@@ -4,7 +4,9 @@
   "description": "Unscramble words from a random set of characters using TW06 scrabble dictionary.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app", 
+    "dev": "node-dev app"
   },
   "repository": {
     "type": "git",
