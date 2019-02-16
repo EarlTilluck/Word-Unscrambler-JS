@@ -20,8 +20,8 @@ function showResults(start, results) {
     // show stats (time taken)    
     var end = new Date();
     $("#stats").html(
-        "time:<br/>" + results[results.length-1] + 
-        "ms on server.<br/>" + (end-start) + "ms total"
+        "time: " + results[results.length-1] + 
+        "ms on server, " + (end-start) + "ms total"
     );
 }
 
@@ -52,7 +52,7 @@ var timer;
 function getResultsDelayed() {
     clearTimeout(timer);
     timer = setTimeout(function() {
-        search($('#textinput').val());
+        search($('#search-input').val());
     },2000);
 }
 
@@ -61,11 +61,12 @@ function getResultsDelayed() {
  * click events etc.
  */
 $(document).ready(function() {
-    $('#btn').click(function() {
+    $('#btn-search').click(function() {
         clearTimeout(timer);
-        search($('#textinput').val());
+        search($('#search-input').val());
     });
-    $('#textinput').keyup(function() {
+    $('#search-input').keyup(function() {
         getResultsDelayed();
-    });    
+    }); 
+    $('#fdate').html(new Date().getFullYear());   
 });

@@ -6,6 +6,7 @@ Useful for cheating scrabble, bookworm adventures and other word games.
 
 ### todo:
 * add code for errors (/search/nothing or /search/1234)
+* display 20 items per page (js or bootstrap carousel)
 * Update web page (css)
 * improve algorithm?
 * read and check on how to avoid blocking.

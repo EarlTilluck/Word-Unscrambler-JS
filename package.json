@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app", 
+    "start": "node app",
     "dev": "node-dev app"
   },
   "repository": {
@@ -20,5 +20,13 @@
   "homepage": "https://github.com/EarlTilluck/Word-Unscrambler-JS#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "pixrem": "^5.0.0"
   }
 }

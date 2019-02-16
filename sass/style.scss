@@ -1,0 +1,74 @@
+$font-stack: 'Cinzel', serif;
+$c-blue: #1cb3c8;
+$c-blue2: #0a516d;
+$c-light: #dfe2e2;
+$c-grey: #738598;
+$c-dark: #3c415e;
+$c-red: #913535;
+
+html, body {
+  height: 100%;
+  margin:0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font: 100% $font-stack;
+  background-color: $c-dark;
+  color: $c-light;
+}
+
+.content {
+  flex: 1 0 auto;
+  //background-color: rgb(121, 121, 212);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.content div {
+  display:inline-block;
+  //border:1px solid green;
+}
+
+.header {
+  text-align: center;
+}
+
+#stats {
+  font-size: 0.8rem;
+}
+
+#results {
+  font-size: 0.8rem;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+#results div {
+  width: 50%;
+  
+}
+#results div p {
+  //padding: 0, 1%;
+}
+
+
+.footer {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  //background-color: $c-red;
+}
+.footer a {
+  color: $c-blue;
+}
+.footer a:hover {
+  color: $c-blue;
+}
+.footer a:active {
+  color: $c-red;
+}
