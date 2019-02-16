@@ -20,7 +20,8 @@ function showResults(start, results) {
     // show stats (time taken)    
     var end = new Date();
     $("#stats").html(
-        "time: " + results[results.length-1] + 
+        (results.length-1) +
+        " results in: " + results[results.length-1] + 
         "ms on server, " + (end-start) + "ms total"
     );
 }

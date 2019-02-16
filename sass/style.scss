@@ -6,6 +6,7 @@ $c-grey: #738598;
 $c-dark: #3c415e;
 $c-red: #913535;
 
+
 html, body {
   height: 100%;
   margin:0;
@@ -19,25 +20,66 @@ body {
   color: $c-light;
 }
 
+
+$btn-border: grey;
+$btn-background: #4BB543;
+$btn-hover: #7c4789;
+$btn-active: #7c4789;
+
+
+.search-area {
+  display: flex;
+  justify-content: center;
+}
+.input-group {
+  display:flex;
+  height: 30px;
+}
+
+#search-input {
+  border: 1px solid $c-light;
+  border-right: none;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  padding-left: 5px;
+  font-family: $font-stack;
+} 
+
+#btn-search {
+  border: 1px solid $c-light;
+  border-left: none;
+  background-color: $btn-background;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  color: $c-light;
+  font-family: $font-stack;
+}
+#btn-search:hover {
+  background-color: $btn-hover;
+}
+#btn-search:active {
+  background-color: $btn-hover;
+}
+
 .content {
   flex: 1 0 auto;
-  //background-color: rgb(121, 121, 212);
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
-.content div {
+.content > div {
   display:inline-block;
-  //border:1px solid green;
 }
+
 
 .header {
   text-align: center;
 }
 
 #stats {
+  margin: 5px;
   font-size: 0.8rem;
 }
 
@@ -54,6 +96,7 @@ body {
 }
 #results div p {
   //padding: 0, 1%;
+  background-color: red;
 }
 
 
@@ -61,7 +104,6 @@ body {
   flex-shrink: 0;
   font-size: 0.8rem;
   padding-left: 10px;
-  //background-color: $c-red;
 }
 .footer a {
   color: $c-blue;
