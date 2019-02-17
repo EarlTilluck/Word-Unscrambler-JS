@@ -85,14 +85,14 @@ body {
 }
 
 #stats {
-  margin: 5px;
+  margin-top: 15px;
   font-size: 12.8px;
   font-size: 0.8rem;
 }
 
-#results {
-  font-size: 12.8px;
-  font-size: 0.8rem;
+#results-container {
+  margin-top: 15px;
+  width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,18 +100,57 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#results div {
-  width: 50%;
+#results {
+  height: 272px;
+  height: 17rem;
 }
 
-#results div p {
-  background-color: red;
+#results p {
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.r-side button {
+  border: none;
+  background-color: #3c415e;
+  color: #dfe2e2;
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.r-side button:hover {
+  background-color: #7c4789;
+}
+
+.r-side button:active {
+  background-color: #7c4789;
+}
+
+.hidden {
+  display: none;
+}
+
+.invis {
+  visibility: hidden;
+}
+
+#err {
+  margin-top: 10px;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  color: #1cb3c8;
+  height: 12.8px;
+  height: 0.8rem;
 }
 
 .footer {
